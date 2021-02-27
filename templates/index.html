@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='cafezin.css') }}">
+    <title>Quero Cafeee</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo" id="fotologo" height="160px">
+            <ul id="menuesquerda">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Cardapio</a></li>
+            </ul>
+            <ul id="menudireita">
+                <li><a href="contato">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block conteudo %}
+        <div id='site'>
+        <section id="mocha">
+            <h1>Mocha cafes</h1>
+            <p>LoreUt enim ad m, quiat proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+        </section >
+
+        <section id=fotoscafes>
+        
+            <h1>Cardápio</h1>
+            <hr>
+              <ul id="cardapio">
+                <a href="cafepuro"><li id="cafe1"><span> Café puro </span></li></a>
+                <a href="capuccino"><li id="cafe2"><span> Cappuccino </span></li></a>
+                <a href="mocaccino"><li id="cafe3"><span> Mocaccino com canela </span></li></a>
+                <a href="chachai"><li id="cafe4"><span> Chá-chai </span></li></a>
+              </ul>
+        </section>
+
+        <section id="receita">
+            
+        </section>
+        <footer>Desenvolvido por: Yan Gianini e Danilo Vasconcellos-2020-Todos os direitos reservados &copy;</footer>
+    {% endblock %}
+    </div>
+</body>
+</html>

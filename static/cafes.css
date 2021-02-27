@@ -1,0 +1,104 @@
+html, body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    background-color: rgb(120, 82, 46);
+    background-image: url(../img/cafe-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#site {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 80%;
+    margin-left: 10%;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+img#fotologo {
+    border-radius: 50%
+}
+
+nav.menu {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+nav.menu ul#menuesquerda {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+}
+
+nav.menu ul#menudireita {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    left: 780px;
+}
+
+nav.menu li {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(155, 120, 82);
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+nav.menu li:hover {
+    background-color: rgb(120, 82, 46);
+}
+
+nav.menu a{
+    color: black;
+    text-decoration: none;
+}
+
+#cafe p{
+    color: rgb(204, 176, 136);
+    font-size: 14pt;
+    text-align: justify;
+    margin-left: 80px;
+    margin-right: 10px;
+}
+
+#cafe h1 {
+    color: rgb(204, 176, 136);
+    text-align: center;
+    font-size: 20pt;
+}
+#cafe h2 {
+    color: rgb(204, 176, 136);
+    text-decoration: underline;
+    font-size: 16pt;
+    margin-left: 40px;
+}
+#imgcafe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+#cafe picture {
+    text-align: center;
+    color: rgb(155, 120, 82)
+}
+hr {
+    border: 2px solid rgb(204, 176, 136);
+}
+
+
+
+
+footer {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}

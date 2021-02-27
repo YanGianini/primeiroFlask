@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+{% block conteudo %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='cafes.css') }}">
+        <div id='site'>
+        <section id="cafe">
+            <h1>Chá-chai</h1>
+            <p>
+            <picture>
+            <img src="{{ url_for('static', filename='img/cha-chai.jpg') }}" alt="Chá-chai" id="imgcafe">
+            </picture>
+            <hr>
+            <h2>Descrição:</h2>
+            <p>Chá Chai é uma bebida do subcontinente indiano feita a partir da produção de chá com uma mistura de especiarias e ervas aromáticas indianas.</p>
+            <h2>Preço</h2>
+            <p>R$6,00</p>
+        </section >
+
+        
+        <footer>Desenvolvido por: Yan Gianini e Danilo Vasconcellos-2020-Todos os direitos reservados &copy;</footer>
+
+    </div>
+{% endblock %}

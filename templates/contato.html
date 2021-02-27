@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='cafes.css') }}">
+    <title>Quero Cafeee</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo" id="fotologo" height="160px">
+            <ul id="menuesquerda">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Cardapio</a></li>
+            </ul>
+            <ul id="menudireita">
+                <li><a href="contato">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+        <div id='site'>
+        <section id="cafe">
+            <br>
+           <p><strong>Telefone:</strong> (11) 4002-8922</p>
+           <p><strong>Email:</strong> mochacafes@gmail.com</p>
+           <p>Nossas redes sociais</p>
+           <p>
+           <img src="{{ url_for('static', filename='img/instagram.png') }}" alt="instagram"> &nbsp;
+           <img src="{{ url_for('static', filename='img/Twitter.png') }}" alt="Twitter">&nbsp;
+           <img src="{{ url_for('static', filename='img/Facebook.png') }}" alt="Facebook">&nbsp;
+            </p>
+        </section >
+
+        
+        <footer>Desenvolvido por: Yan Gianini e Danilo Vasconcellos-2020-Todos os direitos reservados &copy;</footer>
+
+    </div>
+</body>
+</html>

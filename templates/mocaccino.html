@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+{% block conteudo %}
+<link rel="stylesheet" href="{{ url_for('static', filename='cafes.css') }}">
+        <div id='site'>
+        <section id="cafe">
+            <h1>Mocaccino com Canela</h1>
+            <p>
+            <picture>
+            <img src="{{ url_for('static', filename='img/mocaccino-canela.jpg') }}" alt="mocaccino-canela" id="imgcafe">
+            </picture>
+            <hr>
+            <h2>Descrição:</h2>
+            <p>Mocaccino é uma variedade nobre de café da espécie Coffea arabica, que provinha do porto de Moca, no Iêmen.<br>
+                 Entre os séculos XV e XVII, Moca foi o mais importante mercado de café do mundo.</p>
+            <h2>Preço</h2>
+            <p>R$5,00</p>
+        </section >
+
+        
+        <footer>Desenvolvido por: Yan Gianini e Danilo Vasconcellos-2020-Todos os direitos reservados &copy;</footer>
+
+    </div>
+{% endblock %}

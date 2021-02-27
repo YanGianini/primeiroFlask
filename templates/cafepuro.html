@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+{% block conteudo %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='cafes.css') }}">
+        <div id='site'>
+        <section id="cafe">
+            <h1>Café puro</h1>
+            <p>LoreUt enim ad m, quiat proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <picture>
+            <img src="{{ url_for('static', filename='img/cafe-puro.jpg') }}" alt="Café Puro" id="imgcafe">
+            <figcaption>Café Puro</figcaption>
+            </picture>
+            <hr>
+            <h2>Descrição:</h2>
+            <p>O café é uma bebida produzida a partir dos grãos torrados do fruto do cafeeiro.<br>
+                É servido tradicionalmente quente, mas também pode ser consumido gelado.<br> 
+                O café é um estimulante, por possuir cafeína</p>
+            <h2>Preço</h2>
+            <p>R$3,00</p>
+        </section >
+
+        
+        <footer>Desenvolvido por: Yan Gianini e Danilo Vasconcellos-2020-Todos os direitos reservados &copy;</footer>
+
+    </div>
+{% endblock %}
